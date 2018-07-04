@@ -8,6 +8,7 @@ $username = "root";
 $password = "lizhen";
 $database = "lizhen";
 
-$mysqli = new mysqli($host, $username, $password, $database, $port);
+$newInst = mysql_connect("$host:$port", $username, $password);
+mysql_select_db($database, $newInst);
 
-var_dump($mysqli);
+var_dump($newInst);
