@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM php:5.6.36-fpm-stretch
+FROM php:5.6.36-apache-stretch
 
 
 # If the container's stdio is connected to systemd-journald,
